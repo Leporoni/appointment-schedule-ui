@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Region } from '../model/region';
+import { RegionService } from '../service/region.service';
 
 @Component({
   selector: 'app-incidences',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IncidencesComponent implements OnInit {
 
-  constructor() { }
+  regions: Region[] = [];
+
+  constructor(private regionService: RegionService) { }
 
   ngOnInit(): void {
+    this.regions = this.regionService.listRegions();
   }
 
 }

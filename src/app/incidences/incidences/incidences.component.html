@@ -1,1 +1,14 @@
-<p>incidences works!</p>
+<table matSort (matSortChange)="regions">
+    <tr>
+      <th mat-sort-header="id">ID</th>
+      <th mat-sort-header="region">Region</th>
+      <th mat-sort-header="total_exams">Total Exams</th>
+    </tr>
+  
+    <tr *ngFor="let element of regions">
+      <td>{{element.id}}</td>
+      <td>{{element.region}}</td>
+      <td>{{element.total_exams}}</td>
+    </tr>
+  </table>
+  
