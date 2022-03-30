@@ -1,5 +1,8 @@
 # AppointmentScheduleUi
 
+![AppointmentScheduleDraw](https://user-images.githubusercontent.com/17886340/160902080-e4acb31c-a767-4b00-b789-d4a52a679ac1.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
