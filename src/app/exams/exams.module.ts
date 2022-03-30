@@ -3,19 +3,19 @@ import { CommonModule } from '@angular/common';
 import {MatSortModule} from '@angular/material/sort';
 import {MatCardModule} from '@angular/material/card';
 
-import { IncidencesRoutingModule } from './incidences-routing.module';
-import { IncidencesComponent } from './incidences/incidences.component';
+import { ExamsRoutingModule } from './exams-routing.module';
+import { ExamsComponent } from './exams/exams.component';
 
 
 @NgModule({
   declarations: [
-    IncidencesComponent
+    ExamsComponent
   ],
   imports: [
     CommonModule,
-    IncidencesRoutingModule,
+    ExamsRoutingModule,
     MatSortModule,
     MatCardModule
   ]
 })
-export class IncidencesModule { }
+export class ExamsModule { }

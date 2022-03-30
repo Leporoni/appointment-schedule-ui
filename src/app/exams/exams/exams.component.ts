@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Region } from '../model/region';
 import { RegionService } from '../service/region.service';
 
 @Component({
-  selector: 'app-incidences',
-  templateUrl: './incidences.component.html',
-  styleUrls: ['./incidences.component.css']
+  selector: 'app-exams',
+  templateUrl: './exams.component.html',
+  styleUrls: ['./exams.component.css']
 })
-export class IncidencesComponent implements OnInit {
+export class ExamsComponent implements OnInit {
 
   regions: Region[] = [];
 
