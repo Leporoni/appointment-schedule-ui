@@ -1,22 +1,60 @@
 <div class="margin">
     <mat-card>
-        <mat-card-subtitle>
-            Consultas de exames de mamografia - Relação de Regiões
-        </mat-card-subtitle>
+        <mat-card-subtitle>Exames de mamografia entre Junho e Julho de 2015</mat-card-subtitle>
+
+        <table matSort (matSortChange)="incidences">
+            <tr>
+                <th mat-sort-header="id">ID</th>
+                <th mat-sort-header="region_id">ID Região</th>
+                <th mat-sort-header="month">Mês</th>
+                <th mat-sort-header="group_id">ID Faixa Etaria</th>
+                <th mat-sort-header="qtd_exams">N° de exames</th>
+            </tr>
+
+            <tr *ngFor="let element of incidences">
+                <td>{{element.id}}</td>
+                <td>{{element.region_id}}</td>
+                <td>{{element.month}}</td>
+                <td>{{element.group_id}}</td>
+                <td>{{element.qtd_exams}}</td>
+            </tr>
+        </table>
+    </mat-card>
+
+    <mat-card>
+        <mat-card-subtitle>Relação de Regiões Brasileiras</mat-card-subtitle>
 
         <table matSort (matSortChange)="regions">
             <tr>
                 <th mat-sort-header="id">ID</th>
-                <th mat-sort-header="region">Region</th>
-                <th mat-sort-header="total_exams">Total Exams</th>
+                <th mat-sort-header="region'">Região</th>
+                <th mat-sort-header="total_exams">N° Exames</th>
             </tr>
-
             <tr *ngFor="let element of regions">
                 <td>{{element.id}}</td>
                 <td>{{element.region}}</td>
                 <td>{{element.total_exams}}</td>
             </tr>
         </table>
-        
     </mat-card>
+
+    <mat-card>
+        <mat-card-subtitle>Faixa Etaria das mulheres que realizaram os exames</mat-card-subtitle>
+
+        <table matSort (matSortChange)="agegroup">
+            <tr>
+                <th mat-sort-header="id">ID</th>
+                <th mat-sort-header="group_i">Faixa inicial</th>
+                <th mat-sort-header="group_n">Faixa final</th>
+                <th mat-sort-header="description">Descrição</th>
+            </tr>
+            <tr *ngFor="let element of agegroup">
+                <td>{{element.id}}</td>
+                <td>{{element.group_i}}</td>
+                <td>{{element.group_n}}</td>
+                <td>{{element.description}}</td>
+            </tr>
+        </table>
+    </mat-card>
+
 </div>
