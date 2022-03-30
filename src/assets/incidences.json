@@ -1,0 +1,16 @@
+[
+    { 
+        "id": 1, 
+        "region_id": 2, 
+        "month": 5, 
+        "group_id": 1, 
+        "qtd_exams": 44 
+    },
+    { 
+        "id": 2, 
+        "region_id": 3, 
+        "month": 5, 
+        "group_id": 5, 
+        "qtd_exams": 444 
+    }
+]

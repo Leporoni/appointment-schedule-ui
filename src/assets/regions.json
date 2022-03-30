@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "region": "Norte",
+        "total_exams": 10
+    },
+    {
+        "id": 2,
+        "region": "Nordeste",
+        "total_exams": 40
+    },
+    {
+        "id": 3,
+        "total_exams": 1250,
+        "region": "Sudeste"
+    },
+    {
+        "id": 4,
+        "region": "Sul",
+        "total_exams": 1505
+    },
+    {
+        "id": 5,
+        "region": "Centro Oeste",
+        "total_exams": 20
+    }
+]
